@@ -10,6 +10,8 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     public Button refineSearchBtn;
+    public Button findCarBtn;
+
 
 
     @Override
@@ -25,6 +27,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent Intent = new Intent(view.getContext(), RefineSearch1Activity.class);
+                view.getContext().startActivity(Intent);}
+        });
+
+        findCarBtn = (Button) findViewById(R.id.findCarBtn);
+        findCarBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Intent = new Intent(view.getContext(), FindCarActivity.class);
                 view.getContext().startActivity(Intent);}
         });
 

@@ -18,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name="RefineSearch1Activity"></activity>
+        <activity android:name="FindCarActivity"></activity>
     </application>
 
 

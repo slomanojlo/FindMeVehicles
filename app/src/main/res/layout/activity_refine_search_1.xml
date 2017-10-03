@@ -4,64 +4,9 @@
     android:id="@+id/ll_refine_search_1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:id="@+id/rl_header"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:background="#8c8c8c"
-        android:backgroundTint="@color/gray"
-        android:orientation="horizontal"
-        android:weightSum="3">
-
-
-        <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/logo40px"
-            android:paddingLeft="30dp"
-            android:paddingStart="20dp" />
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:backgroundTint="@color/green" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical"
-            android:weightSum="2">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:backgroundTint="@color/green"
-                android:text="log in"
-                android:textSize="7dp" />
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:backgroundTint="@color/gray"
-                android:text="Sign up for FREE"
-                android:textColor="@color/green"
-                android:textSize="6dp" />
-
-
-        </LinearLayout>
-
-
-    </LinearLayout>
+    <include layout="@layout/header" />
 
     <LinearLayout
         android:id="@+id/gl_refine_search"
@@ -117,9 +62,9 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="8dp"
+            android:background="@color/light_gray"
             android:orientation="vertical"
-            android:padding="16dp"
-            android:background="@color/light_gray">
+            android:padding="16dp">
 
 
             <TextView
@@ -129,9 +74,9 @@
                 android:layout_margin="2dp"
                 android:paddingBottom="8dp"
                 android:paddingTop="8dp"
+                android:text="Refine Search"
                 android:textSize="16dp"
-                android:textStyle="bold"
-                android:text="Refine Search" />
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -216,8 +161,8 @@
                         android:layout_alignParentRight="true"
                         android:layout_weight="4"
                         android:background="@color/green"
-                        android:textColor="@color/white"
                         android:text="NEXT"
+                        android:textColor="@color/white"
                         android:textSize="12dp" />
                 </LinearLayout>
 

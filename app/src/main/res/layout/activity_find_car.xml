@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".FindCarActivity">
+
+    <include layout="@layout/header" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="140dp"
+                android:layout_gravity="fill"
+                android:scaleType="centerCrop"
+                android:src="@drawable/carsnip2" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="bottom"
+                android:alpha="0.8"
+                android:background="@color/white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_gravity="bottom"
+                android:gravity="center"
+                android:text="Find your new \n car Onlime"
+                android:textSize="28dp"
+                android:typeface="monospace" />
+            />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="Find your new and used cars. \n Find models that match your needs." />
+
+        <View
+            android:layout_width="250dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/green" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center"
+            android:text="Sell your vehicle on FinMe.Onlime.com \n It's easy and free." />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="177dp"
+            android:layout_height="49dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/green"
+            android:text="SELL YOUR VEHICLE"
+            android:textColor="@color/gray"
+            android:textSize="12dp" />
+
+        <include layout="@layout/tabs" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
