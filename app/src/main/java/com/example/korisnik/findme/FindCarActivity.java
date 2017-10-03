@@ -1,5 +1,6 @@
 package com.example.korisnik.findme;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +14,7 @@ import android.widget.TabHost;
 
 public class FindCarActivity extends AppCompatActivity {
 
-    TabHost tabHost;
+    public TabHost host;
 
 
     @Override
@@ -24,8 +25,18 @@ public class FindCarActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        TabHost host = (TabHost)findViewById(R.id.tabHost);
+        host = (TabHost)findViewById(R.id.tabHost);
         host.setup();
+//        host.setOnTabChangedListener(new TabHost.OnTabChangeListener(){
+//            @Override
+//            public void onTabChanged(String tabId) {
+//                if(tab1.equals(tabId)) {
+//                    //destroy earth
+//                }
+//                if(TAB_2_TAG.equals(tabId)) {
+//                    //destroy mars
+//                }
+//            }});
 
         //Tab 1
         TabHost.TabSpec spec = host.newTabSpec("Cars");
@@ -44,28 +55,18 @@ public class FindCarActivity extends AppCompatActivity {
         spec.setContent(R.id.tab3);
         spec.setIndicator("Vans");
         host.addTab(spec);
+
+
     }
 
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        // Inflate the menu; this adds items to the action bar if it is present.
-//        getMenuInflater().inflate(R.menu.menu_main, menu);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        // Handle action bar item clicks here. The action bar will
-//        // automatically handle clicks on the Home/Up button, so long
-//        // as you specify a parent activity in AndroidManifest.xml.
-//        int id = item.getItemId();
-//
-//        //noinspection SimplifiableIfStatement
-//        if (id == R.id.action_settings) {
-//            return true;
+//    public static void setTabColor(TabHost host) {
+//        for(int i=0;i<host.getTabWidget().getChildCount();i++) {
+//            host.getTabWidget().getChildAt(i).setBackgroundColor(Color.parseColor("#FF0000")); //unselected
 //        }
-//
-//        return super.onOptionsItemSelected(item);
+//        host.getTabWidget().getChildAt(host.getCurrentTab()).setBackgroundColor(Color.parseColor("#0000FF")); // selected
+//    }
+
+
 //
 //
 //    }
