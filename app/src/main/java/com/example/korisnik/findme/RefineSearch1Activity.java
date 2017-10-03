@@ -2,6 +2,7 @@ package com.example.korisnik.findme;
 
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
@@ -12,6 +13,9 @@ public class RefineSearch1Activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_refine_search_1);
+
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.hide();
 
         String[] items = new String[] {"One", "Two", "Three"};
         Spinner spinnerMake = (Spinner) findViewById(R.id.spinnerMake);

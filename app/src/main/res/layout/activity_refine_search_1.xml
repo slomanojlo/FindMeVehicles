@@ -11,18 +11,55 @@
         android:id="@+id/rl_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="6"
+        android:layout_weight="2"
         android:background="#8c8c8c"
-        android:orientation="horizontal">
+        android:backgroundTint="@color/gray"
+        android:orientation="horizontal"
+        android:weightSum="3">
 
 
-        <TextView
-            android:layout_width="match_parent"
+        <ImageButton
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="findmeonlime"
-            android:layout_margin="8dp"
-            android:textSize= "20dp"
-            android:textColor="#00ff00"/>
+            android:background="@drawable/logo40px"
+            android:paddingLeft="30dp"
+            android:paddingStart="20dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="@color/green" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/green"
+                android:text="log in"
+                android:textSize="7dp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="@color/gray"
+                android:text="Sign up for FREE"
+                android:textColor="@color/green"
+                android:textSize="6dp" />
+
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
@@ -37,17 +74,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:weightSum="10"
-            android:padding="20dp">
+            android:padding="20dp"
+            android:weightSum="10">
 
             <TextView
                 android:id="@+id/tw_Results"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:textAlignment="viewEnd"
-                android:text= "21 Results"
                 android:layout_weight="4.5"
+                android:text="21 Results"
+                android:textAlignment="viewEnd"
                 android:textSize="20sp" />
 
             <TextView
@@ -55,19 +92,19 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
-                android:textSize="20sp"
-                android:textColor="#00ff00"
-                android:text="-"/>
+                android:text="-"
+                android:textColor="@color/green"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/tw_Steps"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
-                android:textAlignment="viewStart"
                 android:layout_weight="4.5"
                 android:text="Steps 1/3"
-                android:textColor="#00ff00"
+                android:textAlignment="viewStart"
+                android:textColor="@color/green"
                 android:textSize="20sp" />
 
         </LinearLayout>
@@ -82,7 +119,7 @@
             android:layout_marginTop="8dp"
             android:orientation="vertical"
             android:padding="16dp"
-            android:background="#eaeae1">
+            android:background="@color/light_gray">
 
 
             <TextView
@@ -160,8 +197,9 @@
                         android:layout_alignParentStart="true"
                         android:layout_alignParentTop="true"
                         android:layout_weight="4"
-                        android:background="#8c8c8c"
+                        android:background="@color/gray"
                         android:text="BACK"
+                        android:textColor="@color/white"
                         android:textSize="12dp" />
 
                     <LinearLayout
@@ -177,7 +215,8 @@
                         android:layout_height="36dp"
                         android:layout_alignParentRight="true"
                         android:layout_weight="4"
-                        android:background="#00ff00"
+                        android:background="@color/green"
+                        android:textColor="@color/white"
                         android:text="NEXT"
                         android:textSize="12dp" />
                 </LinearLayout>
