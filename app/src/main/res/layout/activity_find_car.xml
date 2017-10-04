@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,19 +7,29 @@
     android:weightSum="10"
     tools:context=".FindCarActivity">
 
-    <include layout="@layout/header"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ll_header"
+        android:layout_height="wrap_content">
+        <include layout="@layout/header"/>
+
+    </LinearLayout>
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_below="@+id/ll_header"
         android:background="@color/white"
-        android:weightSum="10">
+        android:weightSum="16"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <FrameLayout
             android:layout_width="match_parent"
-            android:layout_height="140dp">
+            android:layout_height="wrap_content">
 
             <ImageView
                 android:id="@+id/imageView"
@@ -47,37 +57,54 @@
             />
         </FrameLayout>
 
-        <TextView
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Find your new and used cars. \n Find models that match your needs." />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:padding="2dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/green" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Sell your vehicle on FindMe.Onlime.com \n It's easy and free." />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="@color/green"
+                android:text="SELL YOUR VEHICLE"
+                android:textColor="@color/gray"
+                android:textSize="12dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:gravity="center"
-            android:text="Find your new and used cars. \n Find models that match your needs." />
+            android:layout_height="wrap_content">
+            <include layout="@layout/tabs" />
 
-        <View
-            android:layout_width="250dp"
-            android:layout_height="2dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@color/green" />
+        </LinearLayout>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="35dp"
-            android:gravity="center"
-            android:text="Sell your vehicle on FindMe.Onlime.com \n It's easy and free." />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="177dp"
-            android:layout_height="49dp"
-            android:layout_gravity="center_horizontal"
-            android:backgroundTint="@color/green"
-            android:text="SELL YOUR VEHICLE"
-            android:textColor="@color/gray"
-            android:textSize="12dp" />
-
-        <include layout="@layout/tabs" />
 
     </LinearLayout>
 
 
-</LinearLayout>
+</RelativeLayout>
