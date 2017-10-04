@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <!--tools:showIn="@layout/activity_find_car"-->
@@ -18,13 +17,13 @@
         <TabHost
             android:id="@+id/tabHost"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true">
+            android:layout_height="match_parent">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+
+                android:background="@drawable/borders"
                 android:orientation="vertical">
 
                 <TabWidget
@@ -44,7 +43,8 @@
                         android:id="@+id/tab1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/light_gray"
+
+                        android:background="@drawable/borders"
                         android:orientation="vertical">
 
                         <include layout="@layout/new_used" />
@@ -101,7 +101,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="DETAILED SEARCH*"
+                            android:text="@string/detailedSearch"
                             android:layout_margin="10dp"
                             android:textSize="12dp"
                             android:textColor="@color/green"/>
@@ -109,7 +109,7 @@
                         <Button
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="SEARCH VEHICLES"
+                            android:text="@string/searchVehicles"
                             android:background="@color/green"
                             android:layout_margin="12dp"/>
 
@@ -119,9 +119,8 @@
                         android:id="@+id/tab2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/light_gray"
+                        android:background="@drawable/borders"
                         android:orientation="vertical">
-
                         <include layout="@layout/new_used" />
 
 
@@ -131,7 +130,7 @@
                         android:id="@+id/tab3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/light_gray"
+                        android:background="@drawable/borders"
                         android:orientation="vertical">
 
                         <include layout="@layout/new_used" />

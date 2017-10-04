@@ -9,6 +9,10 @@ import android.widget.Spinner;
 
 public class RefineSearch1Activity extends AppCompatActivity {
 
+    public static final String one = "One";
+    public static final String two = "Two";
+    public static final String three = "Three";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,21 +21,21 @@ public class RefineSearch1Activity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        String[] items = new String[] {"One", "Two", "Three"};
+        String[] items = new String[] {one, two, three};
         Spinner spinnerMake = (Spinner) findViewById(R.id.spinnerMake);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, items);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerMake.setAdapter(adapter);
 
-        String[] items2 = new String[] {"One", "Two", "Three"};
+        String[] items2 = new String[] {one, two, three};
         Spinner spinnerModel = (Spinner) findViewById(R.id.spinnerModel);
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, items2);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerModel.setAdapter(adapter);
 
-        String[] items3 = new String[] {"One", "Two", "Three"};
+        String[] items3 = new String[] {one, two, three};
         Spinner spinnerNewUsed = (Spinner) findViewById(R.id.spinnerNewUsed);
         ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, items2);

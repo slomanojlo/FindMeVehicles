@@ -10,8 +10,8 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:layout_margin="12dp"
-        android:textOn="NEW"
-        android:textOff="NEW"
+        android:textOn="@string/newString"
+        android:textOff="@string/newString"
         android:checked="true"
         android:background="@drawable/my_btn_toggle" />
 
@@ -20,8 +20,8 @@
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:layout_margin="12dp"
-        android:textOn="USED"
-        android:textOff="USED"
+        android:textOn="@string/used"
+        android:textOff="@string/used"
         android:checked="true"
         android:background="@drawable/my_btn_toggle" />
 

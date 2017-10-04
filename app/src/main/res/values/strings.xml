@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">FindMe</string>
+    <string name="findYourNewCarOnLime">Find your new   car Onlime</string>
+    <string name="findYourNewAndUsedCars">Find your new and used cars. \n  Find models that match your needs.</string>
+    <string name="sellYourVehicleOnFindMe">Sell your vehicle on FindMe.Onlime.com  \n It\'s easy and free.</string>
+    <string name="sellYourVehicle">SELL YOUR VEHICLE</string>
+    <string name="detailedSearch">DETAILED SEARCH*</string>
+    <string name="searchVehicles">SEARCH VEHICLES</string>
+    <string name="newString">NEW</string>
+    <string name="used">USED</string>
+    <string name="refineSearch">Refine Search</string>
+    <string name="makeAModel">MAKE A MODEL</string>
+    <string name="back">BACK</string>
+    <string name="next">NEXT</string>
+    <string name="findCar">Find Car</string>
+    <string name="_21Results">21 Results</string>
+    <string name="dash">-</string>
+    <string name="steps13">Steps 1/3</string>
+    <string name="logIn">log in</string>
+    <string name="signUpForFree">Sign up for FREE</string>
 </resources>

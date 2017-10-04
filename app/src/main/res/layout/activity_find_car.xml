@@ -51,7 +51,7 @@
                 android:layout_height="110dp"
                 android:layout_gravity="bottom"
                 android:gravity="center"
-                android:text="Find your new \n car Onlime"
+                android:text="@string/findYourNewCarOnLime"
                 android:textSize="28dp"
                 android:typeface="monospace" />
             />
@@ -64,11 +64,12 @@
             android:layout_gravity="center_horizontal">
 
             <TextView
+                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
-                android:layout_gravity="center_horizontal"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
                 android:gravity="center_horizontal"
-                android:text="Find your new and used cars. \n Find models that match your needs." />
+                android:text="@string/findYourNewAndUsedCars" />
 
             <View
                 android:layout_width="match_parent"
@@ -81,7 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
-                android:text="Sell your vehicle on FindMe.Onlime.com \n It's easy and free." />
+                android:text="@string/sellYourVehicleOnFindMe" />
 
             <Button
                 android:id="@+id/button2"
@@ -89,7 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:backgroundTint="@color/green"
-                android:text="SELL YOUR VEHICLE"
+                android:text="@string/sellYourVehicle"
                 android:textColor="@color/gray"
                 android:textSize="12dp" />
 
