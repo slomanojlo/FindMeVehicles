@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="70dp"
     android:background="@color/gray"
-    android:orientation="horizontal"
-    tools:showIn="@layout/activity_find_car">
+    android:orientation="horizontal">
+    <!--tools:showIn="@layout/activity_find_car"-->
 
 
     <ImageButton
