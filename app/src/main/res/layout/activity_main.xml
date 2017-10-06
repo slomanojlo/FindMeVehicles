@@ -21,7 +21,13 @@
             android:id="@+id/findCarBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/findCar" />>
+            android:text="@string/findCar" />
+
+        <Button
+            android:id="@+id/sellYourVehicleBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sellYourVehicle" />
 
     </LinearLayout>
 

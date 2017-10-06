@@ -1,17 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/ll_refine_search_1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".RefineSearch1Activity">
 
-    <include layout="@layout/header" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ll_header"
+        android:layout_weight="14"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/header" />
+    </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/gl_refine_search"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="10"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
         android:orientation="vertical">
 
         <LinearLayout
@@ -28,7 +38,6 @@
                 android:layout_gravity="end"
                 android:layout_weight="4.5"
                 android:text="@string/_21Results"
-                android:background="@drawable/borders"
                 android:textAlignment="viewEnd"
                 android:textSize="20sp" />
 

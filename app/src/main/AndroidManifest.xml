@@ -17,8 +17,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="RefineSearch1Activity"></activity>
-        <activity android:name="FindCarActivity"></activity>
+        <activity android:name=".RefineSearch1Activity"></activity>
+        <activity android:name=".FindCarActivity"></activity>
+        <activity android:name=".SellYourVehicleActivity"></activity>
     </application>
 
 
