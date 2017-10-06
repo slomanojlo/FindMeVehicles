@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">FindMe</string>
-    <string name="findYourNewCarOnLime">Find your new   car Onlime</string>
+    <string name="findYourNewCarOnLime">Find your new  \n car Onlime</string>
     <string name="findYourNewAndUsedCars">Find your new and used cars. \n  Find models that match your needs.</string>
     <string name="sellYourVehicleOnFindMe">Sell your vehicle on FindMe.Onlime.com  \n It\'s easy and free.</string>
     <string name="sellYourVehicle">SELL YOUR VEHICLE</string>
