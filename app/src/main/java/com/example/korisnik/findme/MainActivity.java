@@ -12,9 +12,7 @@ public class MainActivity extends AppCompatActivity {
     public Button refineSearchBtn;
     public Button findCarBtn;
     public Button sellYourVehicleBtn;
-
-
-
+    public Button resultsBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +43,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent Intent = new Intent(view.getContext(), SellYourVehicleActivity.class);
+                view.getContext().startActivity(Intent);}
+        });
+
+        resultsBtn = (Button) findViewById(R.id.resultsBtn);
+        resultsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Intent = new Intent(view.getContext(), ResultsActivity.class);
                 view.getContext().startActivity(Intent);}
         });
 
