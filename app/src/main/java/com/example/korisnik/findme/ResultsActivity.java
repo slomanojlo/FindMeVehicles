@@ -1,9 +1,11 @@
 package com.example.korisnik.findme;
 
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.TabHost;
 import android.widget.TextView;
 
@@ -15,7 +17,9 @@ import static android.R.attr.host;
 
 public class ResultsActivity extends AppCompatActivity {
 
-    public TabHost host;
+    public TextView newestFirstBtn;
+    public TextView priceLowestBtn;
+    public TextView priceHighestBtn;
 
 
     @Override
@@ -26,43 +30,55 @@ public class ResultsActivity extends AppCompatActivity {
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        host = (TabHost)findViewById(R.id.tabHost);
-        host.setup();
+        newestFirstBtn = (TextView) findViewById(R.id.newestFirstBtn);
+        priceLowestBtn = (TextView) findViewById(R.id.priceLowesttBtn);
+        priceHighestBtn = (TextView) findViewById(R.id.priceHighestBtn);
 
-        //Tab 1
-        TabHost.TabSpec spec = host.newTabSpec("Newest First");
-        spec.setContent(R.id.tab1);
-        spec.setIndicator("Newest First");
-        host.addTab(spec);
 
-        //Tab 2
-        spec = host.newTabSpec("Price (Lowest)");
-        spec.setContent(R.id.tab2);
-        spec.setIndicator("Price (Lowest)");
-        host.addTab(spec);
+        newestFirstBtn.setOnClickListener(new View.OnClickListener() {
 
-        //Tab 3
-        spec = host.newTabSpec("Price (Highest)");
-        spec.setContent(R.id.tab3);
-        spec.setIndicator("Price (Highest)");
-        host.addTab(spec);
+            @Override
+            public void onClick(View v) {
 
-//        host.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
-//
-//            @Override
-//            public void onTabChanged(String tabId) {
-//
-//                for (int i = 0; i < host.getTabWidget().getChildCount(); i++) {
-//                    host.getTabWidget().getChildAt(i).setBackgroundColor(Color.parseColor("#FF0000")); // unselected
-//                    TextView tv = (TextView) host.getTabWidget().getChildAt(i).findViewById(android.R.id.title); //Unselected Tabs
-//                    tv.setTextColor(Color.parseColor("#ffffff"));
-//                }
-//
-//                host.getTabWidget().getChildAt(host.getCurrentTab()).setBackgroundColor(Color.parseColor("#0000FF")); // selected
-//                TextView tv = (TextView) host.getCurrentTabView().findViewById(android.R.id.tabhost); //for Selected Tab
-//                tv.setTextColor(Color.parseColor("#000000"));
-//
-//            }
-//        });
+                newestFirstBtn.setTextColor(getResources().getColor(R.color.green));
+                newestFirstBtn.setTypeface(Typeface.DEFAULT_BOLD);
+                priceLowestBtn.setTextColor(getResources().getColor(R.color.gray));
+                priceLowestBtn.setTypeface(Typeface.DEFAULT);
+                priceHighestBtn.setTextColor(getResources().getColor(R.color.gray));
+                priceHighestBtn.setTypeface(Typeface.DEFAULT);
+
+            }
+        });
+
+        priceLowestBtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                priceLowestBtn.setTextColor(getResources().getColor(R.color.green));
+                priceLowestBtn.setTypeface(Typeface.DEFAULT_BOLD);
+                newestFirstBtn.setTextColor(getResources().getColor(R.color.gray));
+                newestFirstBtn.setTypeface(Typeface.DEFAULT);
+                priceHighestBtn.setTextColor(getResources().getColor(R.color.gray));
+                priceHighestBtn.setTypeface(Typeface.DEFAULT);
+
+            }
+        });
+
+        priceHighestBtn.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+
+                priceHighestBtn.setTextColor(getResources().getColor(R.color.green));
+                priceHighestBtn.setTypeface(Typeface.DEFAULT_BOLD);
+                priceLowestBtn.setTextColor(getResources().getColor(R.color.gray));
+                priceLowestBtn.setTypeface(Typeface.DEFAULT);
+                newestFirstBtn.setTextColor(getResources().getColor(R.color.gray));
+                newestFirstBtn.setTypeface(Typeface.DEFAULT);
+
+            }
+        });
+
     }
 }
