@@ -48,24 +48,11 @@ public class SellYourVehicleActivity extends AppCompatActivity {
         host.addTab(spec);
 
         String[] items = new String[] {one, two, three};
-        Spinner spinnerMake = (Spinner) findViewById(R.id.spinnerMake);
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, items);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerMake.setAdapter(adapter);
+        spinner.setAdapter(adapter);
 
-        String[] items2 = new String[] {one, two, three};
-        Spinner spinnerModel = (Spinner) findViewById(R.id.spinnerModel);
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, items2);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerModel.setAdapter(adapter2);
-
-        String[] items3 = new String[] {one, two, three};
-        Spinner spinnerModelVariant = (Spinner) findViewById(R.id.spinnerModelVariant);
-        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, items2);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerModelVariant.setAdapter(adapter3);
     }
 }
