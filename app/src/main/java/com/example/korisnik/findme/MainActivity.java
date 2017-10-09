@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     public Button findCarBtn;
     public Button sellYourVehicleBtn;
     public Button resultsBtn;
+    public Button signInBtn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent Intent = new Intent(view.getContext(), ResultsActivity.class);
+                view.getContext().startActivity(Intent);}
+        });
+
+        signInBtn = (Button) findViewById(R.id.signInBtn);
+        signInBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Intent = new Intent(view.getContext(), SignInActivity.class);
                 view.getContext().startActivity(Intent);}
         });
 
