@@ -47,6 +47,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:text="Newest First"
+                    android:padding="8dp"
                     android:textColor="@color/green"
                     android:textStyle="bold"/>
 
