@@ -14,9 +14,9 @@ import android.widget.TabHost;
  * Created by Korisnik on 4.10.2017..
  */
 
-public class SellYourVehicleActivity extends AppCompatActivity {
+public class SellYourVehicle3Activity extends AppCompatActivity {
 
-    public TabHost host;
+    public Button backBtn;
     public Button nextBtn;
     public static final String one = "One";
     public static final String two = "Two";
@@ -25,31 +25,12 @@ public class SellYourVehicleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sell_your_vehicle);
+        setContentView(R.layout.activity_sell_your_vehicle_3);
 
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
 
-        host = (TabHost)findViewById(R.id.tabHost);
-        host.setup();
 
-        //Tab 1
-        TabHost.TabSpec spec = host.newTabSpec("Cars");
-        spec.setContent(R.id.tab1);
-        spec.setIndicator("Cars");
-        host.addTab(spec);
-
-        //Tab 2
-        spec = host.newTabSpec("Bikes");
-        spec.setContent(R.id.tab2);
-        spec.setIndicator("Bikes");
-        host.addTab(spec);
-
-        //Tab 3
-        spec = host.newTabSpec("Vans");
-        spec.setContent(R.id.tab3);
-        spec.setIndicator("Vans");
-        host.addTab(spec);
 
         String[] items = new String[] {one, two, three};
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
@@ -58,13 +39,29 @@ public class SellYourVehicleActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
-        nextBtn = (Button) findViewById(R.id.nextBtn);
-        nextBtn.setOnClickListener(new View.OnClickListener() {
+        backBtn = (Button) findViewById(R.id.backBtn);
+        backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent Intent = new Intent(view.getContext(), SellYourVehicle2Activity.class);
                 view.getContext().startActivity(Intent);}
         });
+
+        nextBtn = (Button) findViewById(R.id.nextBtn);
+        nextBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Intent = new Intent(view.getContext(), SellYourVehicle4Activity.class);
+                view.getContext().startActivity(Intent);}
+        });
+
+//        nextBnt = (Button) findViewById(R.id.signInBtn);
+//        nextBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent Intent = new Intent(view.getContext(), SignInActivity.class);
+//                view.getContext().startActivity(Intent);}
+//        });
 
     }
 }

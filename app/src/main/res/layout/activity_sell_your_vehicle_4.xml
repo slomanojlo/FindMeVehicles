@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="14">
+
         <include layout="@layout/header" />
 
     </LinearLayout>
@@ -54,13 +55,12 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="start"
                 android:layout_weight="4.5"
-                android:text="@string/step16"
+                android:text="@string/steps46"
                 android:textAlignment="viewStart"
                 android:textColor="@color/green"
                 android:textSize="20sp" />
 
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -73,79 +73,37 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <TabHost
-                android:id="@+id/tabHost"
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/additional_features"
+                android:textSize="16sp" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnCount="2">
+
+                <CheckBox
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:text="ABS"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:text="ABS"/>
 
-                    <TabWidget
-                        android:id="@android:id/tabs"
-                        android:layout_width="match_parent"
-                        android:layout_height="60dp"
-                        android:divider="@color/light_gray">
+            </GridLayout>
 
-                    </TabWidget>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/make_model"
-                        android:textSize="16sp"
-                        android:padding="4dp" />
-
-                    <FrameLayout
-                        android:id="@android:id/tabcontent"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                        <LinearLayout
-                            android:id="@+id/tab1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:paddingTop="8dp">
-
-                            <include layout="@layout/row_spinner" />
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/tab2"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/borders"
-                            android:orientation="vertical">
-
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:id="@+id/tab3"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/borders"
-                            android:orientation="vertical">
-
-
-                        </LinearLayout>
-
-                    </FrameLayout>
-
-                </LinearLayout>
-
-            </TabHost>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="bottom"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="10">
 
                 <Button
                     android:id="@+id/backBtn"
@@ -177,6 +135,7 @@
 
         </LinearLayout>
 
-
     </LinearLayout>
+
+
 </LinearLayout>

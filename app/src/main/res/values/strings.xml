@@ -30,4 +30,14 @@
     <string name="uploadPhotos">Upload Photos</string>
     <string name="please_note">Please note: The pictures used must not be misleading or subject to the rights of a third party. Any breached of these regulations lead to the deletion of your ad according to our Terms and Conditions.</string>
     <string name="preview_ad">Preview Ad</string>
+    <string name="make_model"><![CDATA[MAKE & MODEL]]></string>
+    <string name="key_facts">KEY FACTS</string>
+    <string name="step26">Step 2/6</string>
+    <string name="step36">Step 3/6</string>
+    <string name="features">FEATURES</string>
+    <string name="steps46">Steps 4/6</string>
+    <string name="additional_features">ADDITIONAL FEATURES</string>
+    <string name="description">DESCRIPTION</string>
+    <string name="please_describe">Please describe your vehicle - the more detailed, the better \n - Condition (looks, dents, etc) \n - Number of previous owners \n - Is it a non smoker vehicle? \n - Previous accidents \n - Are there outstanding repairs? \n - Not permitted: Telephone numbers, email addresses,
+URL’s, HTML formatting \n You have 2000 characters at your disposal.  </string>
 </resources>

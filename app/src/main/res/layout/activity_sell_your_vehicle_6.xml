@@ -142,6 +142,41 @@
                     android:textSize="12dp" />
 
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom"
+                    android:padding="4dp"
+                    android:orientation="horizontal"
+                    android:weightSum="10">
+
+                    <Button
+                        android:id="@+id/backBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="4"
+                        android:background="@color/gray"
+                        android:text="@string/back"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2">
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/nextBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="36dp"
+                        android:layout_weight="4"
+                        android:background="@color/green"
+                        android:text="@string/next"
+                        android:textColor="@color/white"
+                        android:textSize="12dp" />
+                </LinearLayout>
 
             </LinearLayout>
 
