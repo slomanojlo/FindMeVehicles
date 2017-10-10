@@ -20,6 +20,7 @@
         <activity android:name=".RefineSearch1Activity"></activity>
         <activity android:name=".FindCarActivity"></activity>
         <activity android:name=".SellYourVehicleActivity"></activity>
+        <activity android:name=".SellYourVehicle6Activity"></activity>
         <activity android:name=".ResultsActivity"></activity>
         <activity android:name=".SignInActivity"></activity>
     </application>

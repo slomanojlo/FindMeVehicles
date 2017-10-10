@@ -25,4 +25,9 @@
     <string name="create_account">Create Account</string>
     <string name="create_a_findmeonlime_acount">Create a FindMeOnLime Acount</string>
     <string name="sign_in_to_findmeonlime">Sign in to FindMeOnLime</string>
+    <string name="step6">Step 6/6</string>
+    <string name="you_can_tranfer">You can transfer up to 15 pictures (JPEG, max. 8MB per picture). You can set the photo order yourself. Simply hold down the the mouse button and drag the photo to where you would like it to appear.</string>
+    <string name="uploadPhotos">Upload Photos</string>
+    <string name="please_note">Please note: The pictures used must not be misleading or subject to the rights of a third party. Any breached of these regulations lead to the deletion of your ad according to our Terms and Conditions.</string>
+    <string name="preview_ad">Preview Ad</string>
 </resources>

@@ -45,6 +45,12 @@
                 android:text="@string/sellYourVehicle" />
 
             <Button
+                android:id="@+id/sellYourVehicle6Btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sell your vehicle 6" />
+
+            <Button
                 android:id="@+id/resultsBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

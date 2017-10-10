@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
     public Button refineSearchBtn;
     public Button findCarBtn;
     public Button sellYourVehicleBtn;
+    public Button sellYourVehicle6Btn;
     public Button resultsBtn;
     public Button signInBtn;
 
@@ -37,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent Intent = new Intent(view.getContext(), FindCarActivity.class);
+                view.getContext().startActivity(Intent);}
+        });
+
+        sellYourVehicle6Btn = (Button) findViewById(R.id.sellYourVehicle6Btn);
+        sellYourVehicle6Btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Intent = new Intent(view.getContext(), SellYourVehicle6Activity.class);
                 view.getContext().startActivity(Intent);}
         });
 

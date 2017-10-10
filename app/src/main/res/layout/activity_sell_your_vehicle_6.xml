@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_refine_search_1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="14">
+        <include layout="@layout/header" />
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+
+        <LinearLayout
+            android:id="@+id/gl_refine_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:id="@+id/tw_Results"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="4.5"
+                    android:text="@string/sellYourVehicleSmall"
+                    android:textAlignment="viewEnd"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/dash"
+                    android:textColor="@color/green"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tw_Steps"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="4.5"
+                    android:text="@string/step6"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/green"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/borders"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="PICTURES"
+                    android:textSize="16sp"
+                    android:paddingBottom="4dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/you_can_tranfer"/>
+
+                <!--<FrameLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent">-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="match_parent"-->
+                        <!--android:src="@mipmap/car1080"-->
+                        <!--/>-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:padding="32dp"-->
+                        <!--android:layout_gravity="right"-->
+                        <!--android:src="@drawable/ic_add_circle_black_24dp"-->
+                        <!--android:tint="@color/green"/>-->
+
+                <!--</FrameLayout>-->
+
+
+
+                <Button
+                    android:id="@+id/uploadBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/green"
+                    android:text="@string/uploadPhotos"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="4dp"
+                    android:paddingBottom="4dp"
+                    android:text="@string/please_note"/>
+
+                <Button
+                    android:id="@+id/previewAdBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="@color/green"
+                    android:text="@string/preview_ad"
+                    android:textColor="@color/gray"
+                    android:textSize="12dp" />
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
