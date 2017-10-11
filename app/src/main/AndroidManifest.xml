@@ -28,6 +28,7 @@
         <activity android:name=".SellYourVehicleFinalActivity"></activity>
         <activity android:name=".ResultsActivity"></activity>
         <activity android:name=".SignInActivity"></activity>
+        <activity android:name=".ProfileActivity"></activity>
     </application>
 
 

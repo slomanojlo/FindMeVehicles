@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     public Button sellYourVehicle6Btn;
     public Button resultsBtn;
     public Button signInBtn;
+    public Button profileBtn;
 
 
     @Override
@@ -72,6 +73,16 @@ public class MainActivity extends AppCompatActivity {
                 Intent Intent = new Intent(view.getContext(), SignInActivity.class);
                 view.getContext().startActivity(Intent);}
         });
+
+        profileBtn = (Button) findViewById(R.id.profileBtn);
+        profileBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Intent = new Intent(view.getContext(), ProfileActivity.class);
+                view.getContext().startActivity(Intent);}
+        });
+
+
 
     }
 

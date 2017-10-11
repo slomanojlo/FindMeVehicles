@@ -45,4 +45,14 @@ URL’s, HTML formatting \n You have 2000 characters at your disposal.  </string
     <string name="finalStr">Final</string>
     <string name="submit">SUBMIT</string>
     <string name="modify">MODIFY</string>
+    <string name="email">Email</string>
+    <string name="change_password">Change password</string>
+    <string name="profile_data">PROFILE DATA</string>
+    <string name="password">Password</string>
+    <string name="cc">CC</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="zip">ZIP</string>
+    <string name="social_id">Social ID</string>
+    <string name="phone">Phone</string>
+    <string name="update">update</string>
 </resources>
