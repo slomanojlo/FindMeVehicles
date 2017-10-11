@@ -40,4 +40,9 @@
     <string name="description">DESCRIPTION</string>
     <string name="please_describe">Please describe your vehicle - the more detailed, the better \n - Condition (looks, dents, etc) \n - Number of previous owners \n - Is it a non smoker vehicle? \n - Previous accidents \n - Are there outstanding repairs? \n - Not permitted: Telephone numbers, email addresses,
 URL’s, HTML formatting \n You have 2000 characters at your disposal.  </string>
+    <string name="technical_data">TECHNICAL DATA</string>
+    <string name="vehicle_description">VEHICLE DESCRIPTION</string>
+    <string name="finalStr">Final</string>
+    <string name="submit">SUBMIT</string>
+    <string name="modify">MODIFY</string>
 </resources>

@@ -10,29 +10,29 @@ import android.widget.Button;
  * Created by Korisnik on 10.10.2017..
  */
 
-public class SellYourVehicle6Activity extends AppCompatActivity {
+public class SellYourVehicleFinalActivity extends AppCompatActivity {
 
-    public Button backBtn;
-    public Button nextBtn;
+    public Button modifyBtn;
+    public Button submitBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sell_your_vehicle_6);
+        setContentView(R.layout.activity_sell_your_vehicle_final);
 
-        backBtn = (Button) findViewById(R.id.backBtn);
-        backBtn.setOnClickListener(new View.OnClickListener() {
+        modifyBtn = (Button) findViewById(R.id.modifyBtn);
+        modifyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent Intent = new Intent(view.getContext(), SellYourVehicle5Activity.class);
+                Intent Intent = new Intent(view.getContext(), SellYourVehicleActivity.class);
                 view.getContext().startActivity(Intent);}
         });
 
-        nextBtn = (Button) findViewById(R.id.nextBtn);
-        nextBtn.setOnClickListener(new View.OnClickListener() {
+        submitBtn = (Button) findViewById(R.id.submitBtn);
+        submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent Intent = new Intent(view.getContext(), SellYourVehicleFinalActivity.class);
+                Intent Intent = new Intent(view.getContext(), MainActivity.class);
                 view.getContext().startActivity(Intent);}
         });
     }
