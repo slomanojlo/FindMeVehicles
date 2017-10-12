@@ -6,6 +6,15 @@
     android:orientation="vertical">
 
     <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="14">
+        <include layout="@layout/header" />
+
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/gl_refine_search"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -67,14 +76,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:padding="4dp"
                 android:text="@string/key_facts"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:padding="4dp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-
                 <include layout="@layout/row_spinner" />
 
             </LinearLayout>
@@ -119,14 +127,4 @@
 
 
     </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/ll_header"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="14">
-        <include layout="@layout/header" />
-
-    </LinearLayout>
-
 </LinearLayout>
