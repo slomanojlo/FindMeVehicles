@@ -32,6 +32,7 @@
         <activity android:name=".EmailActivity"></activity>
         <activity android:name=".Email2Activity"></activity>
         <activity android:name=".Email3Activity"></activity>
+        <activity android:name=".DetailedResultsActivity"></activity>
     </application>
 
 

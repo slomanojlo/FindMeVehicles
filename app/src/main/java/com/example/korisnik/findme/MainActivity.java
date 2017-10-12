@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     public Button signInBtn;
     public Button profileBtn;
     public Button emailBtn;
+    public Button detailedBtn;
 
 
     @Override
@@ -91,6 +92,14 @@ public class MainActivity extends AppCompatActivity {
                 view.getContext().startActivity(Intent);}
         });
 
+
+        detailedBtn = (Button) findViewById(R.id.detailedResultsBtn);
+        detailedBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Intent = new Intent(view.getContext(), DetailedResultsActivity.class);
+                view.getContext().startActivity(Intent);}
+        });
 
 
     }
