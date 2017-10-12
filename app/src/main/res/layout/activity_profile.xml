@@ -37,10 +37,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:text="@string/email"
                 android:gravity="center"
-                android:textStyle="bold"
-                android:textSize="20sp" />
+                android:text="@string/email"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
@@ -60,37 +60,46 @@
                 android:padding="16dp"
                 android:weightSum="12">
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="4dp"
-                    android:text="@string/email" />
+                    android:orientation="vertical">
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/borders"
-                    android:padding="2dp"
-                    android:hint="ella.johnson@yahoo.uk"
-                    android:inputType="textEmailAddress" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:text="@string/email" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="4dp"
-                    android:text="@string/password" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borders"
+                        android:hint="ella.johnson@yahoo.uk"
+                        android:inputType="textEmailAddress"
+                        android:padding="2dp" />
 
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:hint="*********"
-                    android:background="@drawable/borders"
-                    android:inputType="textPassword" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:text="@string/password" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/change_password" />
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borders"
+                        android:hint="*********"
+                        android:inputType="textPassword" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/change_password" />
+
+
+                </LinearLayout>
+
 
                 <View
                     android:layout_width="wrap_content"
@@ -101,159 +110,167 @@
                     android:background="@color/green"
                     android:padding="8dp" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="4dp"
-                    android:text="@string/profile_data"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="4dp"
-                    android:text="Full name"
-                    android:inputType="textPersonName"/>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/borders"
-                    android:inputType="textPassword" />
-
-
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                    android:orientation="vertical">
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:padding="4dp"
-                        android:text="@string/date_of_birth"
-                        android:layout_weight="1"
-                        android:inputType="date"/>
+                        android:text="@string/profile_data"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPersonName"
+                        android:padding="4dp"
+                        android:text="Full name" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borders"
+                        android:inputType="textPassword" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:inputType="date"
+                            android:padding="4dp"
+                            android:text="@string/date_of_birth" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            android:text="@string/cc" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/borders"
+                            android:inputType="textPassword" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/borders"
+                            android:inputType="textPassword" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="textPostalAddress"
+                        android:padding="4dp"
+                        android:text="Address" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/borders"
+                        android:inputType="textPassword" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            android:text="@string/zip" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="4dp"
+                            android:text="City" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/borders"
+                            android:inputType="number" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="4dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/borders"
+                            android:inputType="text" />
+
+                    </LinearLayout>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:padding="4dp"
-                        android:layout_weight="1"
-                        android:text="@string/cc"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                        android:text="@string/phone" />
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/borders"
-                        android:inputType="textPassword"
-                        android:layout_weight="1"
-                        android:layout_marginRight="4dp"/>
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/borders"
-                        android:inputType="textPassword"
-                        android:layout_marginLeft="4dp"
-                        android:layout_weight="1"/>
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="4dp"
-                    android:text="Address"
-                    android:inputType="textPostalAddress"/>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/borders"
-                    android:inputType="textPassword" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                        android:inputType="phone" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:padding="4dp"
-                        android:text="@string/zip"
-                        android:layout_weight="1"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="4dp"
-                        android:layout_weight="1"
-                        android:text="City"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+                        android:text="@string/social_id" />
 
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/borders"
-                        android:inputType="number"
-                        android:layout_weight="1"
-                        android:layout_marginRight="4dp"/>
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/borders"
-                        android:inputType="text"
-                        android:layout_marginLeft="4dp"
-                        android:layout_weight="1"/>
+                        android:inputType="phone" />
 
                 </LinearLayout>
 
-                <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:padding="4dp"
-                android:text="@string/phone"/>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/borders"
-                    android:inputType="phone" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="4dp"
-                    android:text="@string/social_id"/>
-
-                <EditText
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/borders"
-                    android:inputType="phone" />
 
                 <Button
                     android:id="@+id/updateProfile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
                     android:backgroundTint="@color/green"
                     android:text="@string/update"
                     android:textColor="@color/gray"
@@ -271,8 +288,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:padding="8dp"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:padding="8dp">
 
                     <TextView
                         android:layout_width="match_parent"
@@ -294,8 +311,8 @@
                         android:id="@+id/uploadBtn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
                         android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="8dp"
                         android:backgroundTint="@color/green"
                         android:text="@string/update"
                         android:textColor="@color/gray"
@@ -308,7 +325,6 @@
 
 
                 </LinearLayout>
-
 
 
             </LinearLayout>

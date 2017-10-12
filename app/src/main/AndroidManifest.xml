@@ -29,6 +29,9 @@
         <activity android:name=".ResultsActivity"></activity>
         <activity android:name=".SignInActivity"></activity>
         <activity android:name=".ProfileActivity"></activity>
+        <activity android:name=".EmailActivity"></activity>
+        <activity android:name=".Email2Activity"></activity>
+        <activity android:name=".Email3Activity"></activity>
     </application>
 
 

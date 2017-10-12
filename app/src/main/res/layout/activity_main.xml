@@ -68,6 +68,12 @@
                 android:layout_height="wrap_content"
                 android:text="Profile" />
 
+            <Button
+                android:id="@+id/emailBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email" />
+
         </LinearLayout>
 
 

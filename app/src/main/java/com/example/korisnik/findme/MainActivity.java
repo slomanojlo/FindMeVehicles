@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     public Button resultsBtn;
     public Button signInBtn;
     public Button profileBtn;
+    public Button emailBtn;
 
 
     @Override
@@ -79,6 +80,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent Intent = new Intent(view.getContext(), ProfileActivity.class);
+                view.getContext().startActivity(Intent);}
+        });
+
+        emailBtn = (Button) findViewById(R.id.emailBtn);
+        emailBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Intent = new Intent(view.getContext(), EmailActivity.class);
                 view.getContext().startActivity(Intent);}
         });
 
