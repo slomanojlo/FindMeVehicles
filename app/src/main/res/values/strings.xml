@@ -55,4 +55,7 @@ URL’s, HTML formatting \n You have 2000 characters at your disposal.  </string
     <string name="social_id">Social ID</string>
     <string name="phone">Phone</string>
     <string name="update">update</string>
+    <string name="profile_picture">PROFILE PICTURE</string>
+    <string name="profile_pic_description">Photo is an important way to identify yourself.\nPlease upload a photo that clearly shows your face.</string>
+    <string name="by_uploading">By uploading your photo, you clarify you have the right to distribute this image.</string>
 </resources>

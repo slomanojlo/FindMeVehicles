@@ -118,7 +118,6 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="*********"
                     android:background="@drawable/borders"
                     android:inputType="textPassword" />
 
@@ -153,7 +152,6 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:hint="*********"
                         android:background="@drawable/borders"
                         android:inputType="textPassword"
                         android:layout_weight="1"
@@ -162,7 +160,6 @@
                     <EditText
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:hint="*********"
                         android:background="@drawable/borders"
                         android:inputType="textPassword"
                         android:layout_marginLeft="4dp"
@@ -180,7 +177,6 @@
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="*********"
                     android:background="@drawable/borders"
                     android:inputType="textPassword" />
 
@@ -253,7 +249,7 @@
                     android:inputType="phone" />
 
                 <Button
-                    android:id="@+id/previewAdBtn"
+                    android:id="@+id/updateProfile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -262,6 +258,58 @@
                     android:text="@string/update"
                     android:textColor="@color/gray"
                     android:textSize="12dp" />
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/green"
+                    android:padding="8dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/profile_picture"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/profile_pic_description" />
+
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <Button
+                        android:id="@+id/uploadBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:backgroundTint="@color/green"
+                        android:text="@string/update"
+                        android:textColor="@color/gray"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/by_uploading" />
+
+
+                </LinearLayout>
+
+
 
             </LinearLayout>
 
