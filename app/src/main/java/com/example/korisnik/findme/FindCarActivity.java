@@ -1,11 +1,16 @@
 package com.example.korisnik.findme;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TabHost;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 /**
  * Created by Korisnik on 3.10.2017..
@@ -14,6 +19,10 @@ import android.widget.TabHost;
 public class FindCarActivity extends AppCompatActivity {
 
     public TabHost host;
+    public static final String one = "One";
+    public static final String two = "Two";
+    public static final String three = "Three";
+    public TextView twdetailedSearch;
 
 
     @Override
@@ -25,6 +34,7 @@ public class FindCarActivity extends AppCompatActivity {
         actionBar.hide();
 
         host = (TabHost)findViewById(R.id.tabHost);
+        twdetailedSearch = (TextView) findViewById(R.id.twDetailedSearch);
         host.setup();
 
         //Tab 1
@@ -45,48 +55,19 @@ public class FindCarActivity extends AppCompatActivity {
         spec.setIndicator("Vans");
         host.addTab(spec);
 
-        String[] items = new String[] {"One", "Two", "Three"};
-        Spinner spinnerMake = (Spinner) findViewById(R.id.spinnerMake);
+        String[] items = new String[] {one, two, three};
+        Spinner spinner = (Spinner) findViewById(R.id.spinner);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
                 android.R.layout.simple_spinner_item, items);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerMake.setAdapter(adapter);
+        spinner.setAdapter(adapter);
 
-        String[] items2 = new String[] {"One", "Two", "Three"};
-        Spinner spinnerModel = (Spinner) findViewById(R.id.spinnerModel);
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, items);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerModel.setAdapter(adapter);
-
-        String[] items3 = new String[] {"One", "Two", "Three"};
-        Spinner spinnerMinPrice= (Spinner) findViewById(R.id.spinnerMinPrice);
-        ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, items);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerMinPrice.setAdapter(adapter);
-
-        String[] items4 = new String[] {"One", "Two", "Three"};
-        Spinner spinnerMaxPrice = (Spinner) findViewById(R.id.spinnerMaxPrice);
-        ArrayAdapter<String> adapter4 = new ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, items);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerMaxPrice.setAdapter(adapter);
-
-        String[] items5 = new String[] {"One", "Two", "Three"};
-        Spinner spinnerMilage = (Spinner) findViewById(R.id.spinnerMilage);
-        ArrayAdapter<String> adapter5 = new ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, items);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerMilage.setAdapter(adapter);
-
-        String[] items6 = new String[] {"One", "Two", "Three"};
-        Spinner spinnerYearManufacture = (Spinner) findViewById(R.id.spinnerYearManufacture);
-        ArrayAdapter<String> adapter6 = new ArrayAdapter<String>(this,
-                android.R.layout.simple_spinner_item, items);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerYearManufacture.setAdapter(adapter);
-
+        twdetailedSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Intent = new Intent(view.getContext(), RefineSearch1Activity.class);
+                view.getContext().startActivity(Intent);}
+        });
     }
 
 

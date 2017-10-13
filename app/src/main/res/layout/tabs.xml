@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <!--tools:showIn="@layout/activity_find_car"-->
@@ -19,12 +19,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
                 android:background="@drawable/borders"
                 android:orientation="vertical">
+
 
                 <TabWidget
                     android:id="@android:id/tabs"
@@ -33,6 +36,25 @@
                     android:divider="@color/light_gray">
 
                 </TabWidget>
+
+                <include layout="@layout/new_used" />
+                <include layout="@layout/row_spinner" />
+
+                <TextView
+                    android:id="@+id/twDetailedSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/detailedSearch"
+                    android:layout_margin="10dp"
+                    android:textSize="12dp"
+                    android:textColor="@color/green"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/searchVehicles"
+                    android:background="@color/green"
+                    android:layout_margin="12dp"/>
 
                 <FrameLayout
                     android:id="@android:id/tabcontent"
@@ -47,72 +69,6 @@
                         android:background="@drawable/borders"
                         android:orientation="vertical">
 
-                        <include layout="@layout/new_used" />
-
-                        <Spinner
-                            android:id="@+id/spinnerMake"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginRight="12dp"
-                            />
-
-                        <Spinner
-                            android:id="@+id/spinnerModel"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginRight="12dp" />
-
-                        <Spinner
-                            android:id="@+id/spinnerMinPrice"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginRight="12dp" />
-
-                        <Spinner
-                            android:id="@+id/spinnerMaxPrice"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginRight="12dp" />
-
-                        <Spinner
-                            android:id="@+id/spinnerMilage"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginRight="12dp" />
-
-                        <Spinner
-                            android:id="@+id/spinnerYearManufacture"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="2dp"
-                            android:layout_marginLeft="12dp"
-                            android:layout_marginRight="12dp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="@string/detailedSearch"
-                            android:layout_margin="10dp"
-                            android:textSize="12dp"
-                            android:textColor="@color/green"/>
-
-                        <Button
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="@string/searchVehicles"
-                            android:background="@color/green"
-                            android:layout_margin="12dp"/>
-
                     </LinearLayout>
 
                     <LinearLayout
@@ -121,7 +77,6 @@
                         android:layout_height="match_parent"
                         android:background="@drawable/borders"
                         android:orientation="vertical">
-                        <include layout="@layout/new_used" />
 
 
                     </LinearLayout>
@@ -133,9 +88,8 @@
                         android:background="@drawable/borders"
                         android:orientation="vertical">
 
-                        <include layout="@layout/new_used" />
-
                     </LinearLayout>
+
 
                 </FrameLayout>
 
@@ -146,4 +100,4 @@
     </TableLayout>
 
 
-</ScrollView>
+</LinearLayout>

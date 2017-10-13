@@ -4,6 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="300dp"
     android:orientation="vertical"
+    android:background="@drawable/borders"
+
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginTop="8dp"
     android:weightSum="16">
 
     <LinearLayout

@@ -97,6 +97,7 @@
                         android:text="@string/make_model"
                         android:textSize="16sp"
                         android:padding="4dp" />
+                    <include layout="@layout/row_spinner" />
 
                     <FrameLayout
                         android:id="@android:id/tabcontent"
@@ -109,8 +110,6 @@
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
                             android:paddingTop="8dp">
-
-                            <include layout="@layout/row_spinner" />
 
 
                         </LinearLayout>
