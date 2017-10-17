@@ -28,7 +28,8 @@ import com.google.gson.reflect.TypeToken;
 import java.util.List;
 
 /**
- * Created by Korisnik on 3.10.2017..
+ * Created by Korisnik on 3.10.2017.
+ * Uploaded to BitBucket on 17.10.2017.
  */
 
 public class FindCarActivity extends AppCompatActivity implements TabHost.OnTabChangeListener {
